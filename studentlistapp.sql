@@ -1,0 +1,1 @@
+SELECT * FROM c237_studentlistapp.student;
