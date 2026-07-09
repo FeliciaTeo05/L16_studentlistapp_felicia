@@ -39,7 +39,7 @@
 
         <br>
 
-        <form action="/addStudent" method="POST">
+        <form action="/addStudent" method="POST" enctype="multipart/form-data">
             <div class="text-center">
                 <label for="name">Student Name:</label>
                 <br>
@@ -61,7 +61,7 @@
 
                 <label for="image">Image:</label>
                 <br>
-                <input type="text" id="image" name="image" required>
+                <input type="file" id="image" name="image" accept="image/*">
 
                 <br><br>
 

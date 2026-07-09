@@ -49,24 +49,26 @@
                 </p>
 
                 <p><b>Student Image:</b><br>
-                    <img src="<%= student.image %>" width="20%">
+                    <img src="/images/<%= student.image %>" width="20%">
                 </p>
 
                 <p><b>Date of Birth:</b><br>
-                    <%= student.dob.toLocaleDateString('en-US', { month: 'short' , day: '2-digit' , year: 'numeric' })
-                        %>
+                    <%= student.dob.toLocaleDateString('en-US', { month: 'short' , day: '2-digit' , year: 'numeric' }) %>
                 </p>
 
                 <p><b>Contact:</b><br>
                     <%= student.contact %>
                 </p>
+
             </div>
 
-            <% } else { %>
-                <p>No student found.</p>
+        <% } else { %>
 
-                <% } %>
-                    <a href="/">Back</a>
+            <p>No student found.</p>
+
+        <% } %>
+
+        <a href="/">Back</a>
 
     </div>
 </body>
